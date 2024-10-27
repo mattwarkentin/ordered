@@ -9,6 +9,9 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/ordered)](https://CRAN.R-project.org/package=ordered)
+[![R-CMD-check](https://github.com/topepo/ordered/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/topepo/ordered/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/topepo/ordered/branch/main/graph/badge.svg)](https://app.codecov.io/gh/topepo/ordered?branch=main)
 <!-- badges: end -->
 
 The goal of ordered is to enable additional classification models for
