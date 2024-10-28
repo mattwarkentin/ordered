@@ -11,7 +11,7 @@ Description: Bindings for ordinal classification models for use with the
     <doi:10.1007/s00357-018-9302-x> and others.
 License: MIT + file LICENSE
 Depends: 
-    parsnip (>= 1.2.1.9000)
+    parsnip (>= 1.2.1.9003)
 Imports: 
     cli,
     dplyr,
@@ -20,7 +20,7 @@ Suggests:
     ordinalForest,
     QSARdata,
     testthat (>= 3.0.0)
-Remote: 
+Remotes: 
     tidymodels/parsnip
 Config/testthat/edition: 3
 Encoding: UTF-8
