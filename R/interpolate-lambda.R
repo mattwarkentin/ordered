@@ -1,3 +1,6 @@
+# `use_extreme` is a placeholder for a policy that we need to set; do we error
+# when predicting outside of the pbserved penalty range or do something else
+# (such as predicting at the closest value in the path)
 
 adjacent_penalties <- function(object, penalty, use_extreme = TRUE) {
   ref <- object$lambdaVals
