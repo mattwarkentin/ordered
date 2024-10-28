@@ -24,6 +24,17 @@ used, this package adds:
 
 More will be added.
 
+There are some existing features in tidymodels packages that are useful
+for ordinal outcomes:
+
+- The “partykit” engines for \[parsnip::decision_tree()\] and
+  \[parsnip:: rand_forest()\] use the ordered nature of the factors to
+  train the model.
+- The yardstick package has \[yardstick::kap()\] for weighted and
+  unweighted Kappa statistics (the former being of more interest). Also,
+  \[yardstick::classification_cost()\] can utilize more complex cost
+  structures and uses the class probabilities for estimation.
+
 ## Installation
 
 You can install the development version of ordered like so:
@@ -70,7 +81,7 @@ ord_rf_fit <- ord_rf_spec %>% fit(class ~ ., data = caco_train)
 augment(ord_rf_fit, caco_test)
 #> # A tibble: 5 × 8
 #>   .pred_class .pred_L .pred_M .pred_H class mol_weight volume ClogP
-#>   <ord>         <dbl>   <dbl>   <dbl> <ord>      <dbl>  <dbl> <dbl>
+#>   <fct>         <dbl>   <dbl>   <dbl> <ord>      <dbl>  <dbl> <dbl>
 #> 1 M             0.346   0.404  0.250  M           123.   445. 0.799
 #> 2 M             0.362   0.514  0.124  L           290.   856. 0.534
 #> 3 M             0.204   0.786  0.01   M           519.  1576. 1.02 
