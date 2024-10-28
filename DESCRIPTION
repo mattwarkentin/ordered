@@ -21,7 +21,7 @@ Suggests:
     QSARdata,
     testthat (>= 3.0.0)
 Remotes: 
-    tidymodels/parsnip
+    tidymodels/parsnip#1217
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
