@@ -15,6 +15,7 @@ Depends:
 Imports: 
     cli,
     dplyr,
+    purrr,
     rlang (>= 1.1.4)
 Suggests: 
     ordinalForest,
