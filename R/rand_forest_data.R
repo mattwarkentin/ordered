@@ -9,6 +9,7 @@
 #' @export
 #' @keywords internal
 ordinal_forest_wrapper <- function(x, y, ...) {
+  rlang::check_installed("ordinalForest")
   x$.outcome <- y
   cl <- rlang::call2(.fn = "ordfor", .ns = "ordinalForest",
                      depvar = ".outcome", data = expr(x), ...)

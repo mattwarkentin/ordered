@@ -6,7 +6,7 @@
 \alias{ordered-package}
 \title{ordered: Wrappers for Ordinal Classification Models}
 \description{
-Bindings for ordinal classification models for use with the 'parsnip' package.
+Bindings for ordinal classification models for use with the 'parsnip' package, such as ordinal random forests by Hornung R. (2020) \doi{10.1007/s00357-018-9302-x} and others.
 }
 \author{
 \strong{Maintainer}: Max Kuhn \email{max@posit.co} (\href{https://orcid.org/0000-0003-2402-136X}{ORCID})
