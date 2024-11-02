@@ -17,6 +17,7 @@ Imports:
     dplyr,
     rlang (>= 1.1.4)
 Suggests: 
+    MASS,
     ordinalForest,
     QSARdata,
     spelling,
