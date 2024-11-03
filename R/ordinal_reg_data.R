@@ -11,10 +11,12 @@
 make_ordinal_reg_polr <- function() {
 
   parsnip::set_model_engine("ordinal_reg", "classification", "polr")
-  parsnip::set_dependency("ordinal_reg",
-                          eng = "polr",
-                          pkg = "ordered",
-                          mode = "classification")
+  parsnip::set_dependency(
+    "ordinal_reg",
+    eng = "polr",
+    pkg = "ordered",
+    mode = "classification"
+  )
 
   parsnip::set_fit(
     model = "ordinal_reg",
