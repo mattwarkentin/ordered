@@ -22,7 +22,12 @@ ordinal_forest_wrapper <- function(x, y, ...) {
 make_rand_forest_ordinalForest <- function() {
 
   parsnip::set_model_engine("rand_forest", "classification", "ordinalForest")
-  parsnip::set_dependency("rand_forest", "ordinalForest", "ordinalForest", mode = "classification")
+  parsnip::set_dependency(
+    "rand_forest",
+    eng = "ordinalForest",
+    pkg = "ordinalForest",
+    mode = "classification"
+  )
 
   parsnip::set_model_arg(
     model = "rand_forest",
