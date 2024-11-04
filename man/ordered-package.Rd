@@ -14,10 +14,15 @@ functionality. See below for examples of fitting ordinal regression models
 with {censored}.
 }
 \examples{
+# Weighted sample
+
 set.seed(561246)
-train_inds <- sort(sample(nrow(MASS::housing), size = 48))
-house_train <- MASS::housing[train_inds, ]
-house_test <- MASS::housing[-train_inds, ]
+house_sub <- MASS::housing |>
+  dplyr::sample_n(size = 120, replace = TRUE, weight = Freq) |>
+  subset(select = -Freq)
+train_inds <- sample(120, 80)
+house_train <- house_sub[train_inds, ]
+house_test <- house_sub[-train_inds, ]
 
 # Cumulative-link proportional-odds probit regression model
 
