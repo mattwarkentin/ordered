@@ -9,8 +9,9 @@ Authors@R: c(
     person("Posit Software PBC", role = "cph")
   )
 Description: Bindings for ordinal classification models for use with the
-    'parsnip' package, such as ordinal random forests by Hornung R. (2020)
-    <doi:10.1007/s00357-018-9302-x> and others.
+    'parsnip' package, such as the proportional odds logistic regression
+    implemented in 'MASS' and the ordinal random forests of Hornung (2020)
+    <doi:10.1007/s00357-018-9302-x>.
 License: MIT + file LICENSE
 Depends: 
     parsnip (>= 1.2.1.9003)
