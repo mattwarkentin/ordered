@@ -43,6 +43,11 @@ predict(fit_orf, house_test, type = "prob")
 \author{
 \strong{Maintainer}: Max Kuhn \email{max@posit.co} (\href{https://orcid.org/0000-0003-2402-136X}{ORCID})
 
+Authors:
+\itemize{
+  \item Jason Cory Brunson \email{cornelioid@gmail.com} (\href{https://orcid.org/0000-0003-3126-9494}{ORCID})
+}
+
 Other contributors:
 \itemize{
   \item Posit Software PBC [copyright holder]
