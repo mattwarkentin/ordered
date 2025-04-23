@@ -5,7 +5,7 @@
 #' structure, and in future these may be disaggregated into separate model
 #' types. A vignette will provide thorough illustrations of {ordered}
 #' functionality. See below for examples of fitting ordinal regression models
-#' with {censored}.
+#' with {ordered}.
 #'
 #' @examples
 #' if (rlang::is_installed("MASS")) {
