@@ -8,6 +8,8 @@
 #' with {censored}.
 #'
 #' @examples
+#' if (rlang::is_installed("MASS")) {
+#'
 #' # Weighted sample
 #'
 #' set.seed(561246)
@@ -26,12 +28,17 @@
 #'   fit(Sat ~ Infl + Type + Cont, data = house_train)
 #' predict(fit_cpop, house_test, type = "prob")
 #'
+#' if (rlang::is_installed("ordinalForest")) {
+#'
 #' # Ordinal forest
 #'
 #' fit_orf <- rand_forest(mode = "classification") |>
 #'   set_engine("ordinalForest") |>
 #'   fit(Sat ~ Infl + Type + Cont, data = house_train)
 #' predict(fit_orf, house_test, type = "prob")
+#'
+#' }
+#' }
 #'
 #' @keywords internal
 "_PACKAGE"
