@@ -1,13 +1,9 @@
 
-set.seed(581837)
-house_data <- MASS::housing
-house_sub <-
-  house_data[sample(72, 120, replace = TRUE, prob = house_data$Freq), ] |>
-  subset(select = -Freq)
-
 # model: basic -----------------------------------------------------------------
 
 test_that("model object", {
+  skip_if_not_installed("MASS")
+  house_sub <- get_house()$sub
 
   orig_fit <- MASS::polr(
     Sat ~ Type + Infl + Cont,
@@ -34,6 +30,8 @@ test_that("model object", {
 # model: case weights ----------------------------------------------------------
 
 test_that("case weights", {
+  skip_if_not_installed("MASS")
+  house_data <- get_house()$data
 
   orig_fit <- MASS::polr(
     Sat ~ Type + Infl + Cont,
@@ -66,6 +64,8 @@ test_that("case weights", {
 # prediction: probability ------------------------------------------------------
 
 test_that("probability prediction", {
+  skip_if_not_installed("MASS")
+  house_sub <- get_house()$sub
 
   tidy_fit <- ordinal_reg() |>
     set_engine("polr") |>
@@ -81,6 +81,8 @@ test_that("probability prediction", {
 # prediction: class ------------------------------------------------------------
 
 test_that("class prediction", {
+  skip_if_not_installed("MASS")
+  house_sub <- get_house()$sub
 
   tidy_fit <- ordinal_reg() |>
     set_engine("polr") |>
