@@ -1,3 +1,5 @@
+# https://testthat.r-lib.org/articles/skipping.html#helpers
+
 if (rlang::is_installed("QSARdata")) {
   library(dplyr)
   data(caco, package = "QSARdata")
