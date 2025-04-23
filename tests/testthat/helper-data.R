@@ -14,7 +14,6 @@ if (rlang::is_installed("QSARdata")) {
 }
 
 get_house <- function() {
-  # QUESTION: {MASS} is a recommended package. Why is `require()` necessary?
   require(MASS)
   set.seed(581837)
   house_data <- MASS::housing
